@@ -92,6 +92,16 @@ nav ul li {
   gap: 5px;
 }
 
+/* brand image section */
+.brand-img-container {
+  margin: 70px 8vw;
+  display: flex;
+  gap: 60.42px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* responsive styles */
 
 @media screen and (max-width: 576px) {
@@ -127,6 +137,13 @@ nav ul li {
   }
   .banner-btn {
     margin: 0 auto;
+  }
+  .brand-img-container {
+    margin: 40px 6vw;
+    gap: 30px;
+  }
+  .brand-img-container img {
+    width: 60px;
   }
 }
 
