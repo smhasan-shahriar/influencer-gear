@@ -1,13 +1,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* shared styles */
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+  color: #3a3a3a;
+}
+
+.big {
+  font-size: 1.5rem;
+}
+
+/* navbar styles */
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav {
+  padding: 85px 6.25vw 50px 6.25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* mobile nav */
+.mobile-nav {
+  padding: 16px;
+  display: none;
+}
+.mobile-vav-title {
+  font-weight: 700;
+}
+
+/* banner styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-text-container {
+  padding-left: 6.25vw;
+}
+
+.banner-img-container {
+  background-image: url("./images/circle-design.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.banner-img-container img {
+  width: 440px;
+  margin-right: 8.6vw;
+}
+
+.banner-title {
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.banner-description {
+  font-weight: 600;
+  max-width: 600px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.banner-btn {
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 24px;
+  color: #fff;
+  border: 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 576px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .banner-img-container {
+    margin: 20px auto 50px auto;
+    max-width: 80vw;
+  }
+
+  .banner-img-container img {
+    max-width: 100%;
+  }
+
+  .banner-title {
+    font-size: 1.75rem;
+  }
+  .banner-text-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+  .banner-btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
 }
