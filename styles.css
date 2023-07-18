@@ -65,7 +65,7 @@ nav ul li {
   background-size: contain;
 }
 .banner-img-container img {
-  width: 440px;
+  max-width: 440px;
   margin-right: 8.6vw;
 }
 
@@ -192,6 +192,25 @@ nav ul li {
 .square {
   border-radius: 0;
 }
+
+/* footer styles */
+footer {
+  background: #0a0826;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer-description {
+  color: #d9dbe1;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 576px) {
   .desktop-nav {
     display: none;
@@ -252,6 +271,12 @@ nav ul li {
   }
   .feature-img-container img {
     max-width: 300px;
+  }
+  .footer-title {
+    font-size: 1rem;
+  }
+  .footer-description {
+    font-size: 0.75rem;
   }
 }
 
