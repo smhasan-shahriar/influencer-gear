@@ -168,6 +168,30 @@ nav ul li {
   left: 70vw;
 }
 
+/* feature section style */
+.feature-product {
+  display: flex;
+  gap: 5vw;
+  padding: 0px 8.5vw 100px 8.5vw;
+  justify-content: center;
+  align-items: center;
+}
+.feature-title {
+  color: #0a0826;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.feature-details {
+  max-width: 500px;
+  color: #6c6c6c;
+  font-weight: 700;
+  line-height: 1.75rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.square {
+  border-radius: 0;
+}
 @media screen and (max-width: 576px) {
   .desktop-nav {
     display: none;
@@ -213,11 +237,34 @@ nav ul li {
     grid-template-columns: 330px;
     gap: 15px;
   }
+  .more-btn {
+    left: 65vw;
+    right: 5vw;
+  }
+  .feature-product {
+    flex-direction: column-reverse;
+    padding: 20px;
+    text-align: center;
+    margin-top: -50px;
+  }
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  .feature-img-container img {
+    max-width: 300px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .cards-container {
     grid-template-columns: repeat(2, 330px);
     gap: 15px;
+  }
+  .more-btn {
+    left: 72vw;
+    right: 15vw;
+  }
+  .feature-product {
+    padding: 0 1vw 100px 1vw;
   }
 }
